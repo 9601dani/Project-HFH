@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto, desarrollado en 2018, es un sistema diseñado para gestionar el control de los dispositivos móviles proporcionados por la empresa a sus trabajadores en todo el país de Guatemala. El sistema se construyó utilizando **Visual Basic** (en realidad, podría ser C# si se refiere a un entorno más moderno, pero por favor verifica esto), y emplea **Microsoft Access** como base de datos.
+Este proyecto, desarrollado en 2018, es un sistema diseñado para gestionar el control de los dispositivos móviles proporcionados por la empresa a sus trabajadores en todo el país de Guatemala. El sistema se construyó utilizando **Visual Basic**, y emplea **Microsoft Access** como base de datos.
 
 ## Requisitos
 
