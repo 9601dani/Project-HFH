@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="basexelaDataSet1" targetNamespace="http://tempuri.org/basexelaDataSet1.xsd" xmlns:mstns="http://tempuri.org/basexelaDataSet1.xsd" xmlns="http://tempuri.org/basexelaDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="basexelaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="basexelaConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.basexelaConnectionString1" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ConAsignacionTableAdapter" GeneratorDataComponentClassName="ConAsignacionTableAdapter" Name="ConAsignacion" UserDataComponentName="ConAsignacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="basexelaConnectionString1 (MySettings)" DbObjectName="ConAsignacion" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Fecha_Asignacion, Codigo_Celular, Primer_Nombre, Segundo_Nombre, Primer_Apellido, Segundo_Apellido, Caso, Motivo FROM ConAsignacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fecha_Asignacion" DataSetColumn="Fecha_Asignacion" />
+              <Mapping SourceColumn="Codigo_Celular" DataSetColumn="Codigo_Celular" />
+              <Mapping SourceColumn="Primer_Nombre" DataSetColumn="Primer_Nombre" />
+              <Mapping SourceColumn="Segundo_Nombre" DataSetColumn="Segundo_Nombre" />
+              <Mapping SourceColumn="Primer_Apellido" DataSetColumn="Primer_Apellido" />
+              <Mapping SourceColumn="Segundo_Apellido" DataSetColumn="Segundo_Apellido" />
+              <Mapping SourceColumn="Caso" DataSetColumn="Caso" />
+              <Mapping SourceColumn="Motivo" DataSetColumn="Motivo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ConCelularesTableAdapter" GeneratorDataComponentClassName="ConCelularesTableAdapter" Name="ConCelulares" UserDataComponentName="ConCelularesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="basexelaConnectionString1 (MySettings)" DbObjectName="ConCelulares" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Fecha_Registro, Minutos, Numero_Reposiciones, Numero_Telefonico, Marca, Estado, Modelo FROM ConCelulares</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fecha_Registro" DataSetColumn="Fecha_Registro" />
+              <Mapping SourceColumn="Minutos" DataSetColumn="Minutos" />
+              <Mapping SourceColumn="Numero_Reposiciones" DataSetColumn="Numero_Reposiciones" />
+              <Mapping SourceColumn="Numero_Telefonico" DataSetColumn="Numero_Telefonico" />
+              <Mapping SourceColumn="Marca" DataSetColumn="Marca" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="Modelo" DataSetColumn="Modelo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ConEmpleadoTableAdapter" GeneratorDataComponentClassName="ConEmpleadoTableAdapter" Name="ConEmpleado" UserDataComponentName="ConEmpleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="basexelaConnectionString1 (MySettings)" DbObjectName="ConEmpleado" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Primer_Nombre, Segundo_Nombre, Primer_Apellido, Segundo_Apellido, Descripcion_Afiliado, Puesto FROM ConEmpleado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Primer_Nombre" DataSetColumn="Primer_Nombre" />
+              <Mapping SourceColumn="Segundo_Nombre" DataSetColumn="Segundo_Nombre" />
+              <Mapping SourceColumn="Primer_Apellido" DataSetColumn="Primer_Apellido" />
+              <Mapping SourceColumn="Segundo_Apellido" DataSetColumn="Segundo_Apellido" />
+              <Mapping SourceColumn="Descripcion_Afiliado" DataSetColumn="Descripcion_Afiliado" />
+              <Mapping SourceColumn="Puesto" DataSetColumn="Puesto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="basexelaDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="basexelaDataSet1" msprop:Generator_UserDSName="basexelaDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConAsignacion" msprop:Generator_TableClassName="ConAsignacionDataTable" msprop:Generator_TableVarName="tableConAsignacion" msprop:Generator_TablePropName="ConAsignacion" msprop:Generator_RowDeletingName="ConAsignacionRowDeleting" msprop:Generator_RowChangingName="ConAsignacionRowChanging" msprop:Generator_RowEvHandlerName="ConAsignacionRowChangeEventHandler" msprop:Generator_RowDeletedName="ConAsignacionRowDeleted" msprop:Generator_UserTableName="ConAsignacion" msprop:Generator_RowChangedName="ConAsignacionRowChanged" msprop:Generator_RowEvArgName="ConAsignacionRowChangeEvent" msprop:Generator_RowClassName="ConAsignacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha_Asignacion" msprop:Generator_ColumnVarNameInTable="columnFecha_Asignacion" msprop:Generator_ColumnPropNameInRow="Fecha_Asignacion" msprop:Generator_ColumnPropNameInTable="Fecha_AsignacionColumn" msprop:Generator_UserColumnName="Fecha_Asignacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Codigo_Celular" msprop:Generator_ColumnVarNameInTable="columnCodigo_Celular" msprop:Generator_ColumnPropNameInRow="Codigo_Celular" msprop:Generator_ColumnPropNameInTable="Codigo_CelularColumn" msprop:Generator_UserColumnName="Codigo_Celular" type="xs:int" minOccurs="0" />
+              <xs:element name="Primer_Nombre" msprop:Generator_ColumnVarNameInTable="columnPrimer_Nombre" msprop:Generator_ColumnPropNameInRow="Primer_Nombre" msprop:Generator_ColumnPropNameInTable="Primer_NombreColumn" msprop:Generator_UserColumnName="Primer_Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Segundo_Nombre" msprop:Generator_ColumnVarNameInTable="columnSegundo_Nombre" msprop:Generator_ColumnPropNameInRow="Segundo_Nombre" msprop:Generator_ColumnPropNameInTable="Segundo_NombreColumn" msprop:Generator_UserColumnName="Segundo_Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Primer_Apellido" msprop:Generator_ColumnVarNameInTable="columnPrimer_Apellido" msprop:Generator_ColumnPropNameInRow="Primer_Apellido" msprop:Generator_ColumnPropNameInTable="Primer_ApellidoColumn" msprop:Generator_UserColumnName="Primer_Apellido" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Segundo_Apellido" msprop:Generator_ColumnVarNameInTable="columnSegundo_Apellido" msprop:Generator_ColumnPropNameInRow="Segundo_Apellido" msprop:Generator_ColumnPropNameInTable="Segundo_ApellidoColumn" msprop:Generator_UserColumnName="Segundo_Apellido" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Caso" msprop:Generator_ColumnVarNameInTable="columnCaso" msprop:Generator_ColumnPropNameInRow="Caso" msprop:Generator_ColumnPropNameInTable="CasoColumn" msprop:Generator_UserColumnName="Caso" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Motivo" msprop:Generator_ColumnVarNameInTable="columnMotivo" msprop:Generator_ColumnPropNameInRow="Motivo" msprop:Generator_ColumnPropNameInTable="MotivoColumn" msprop:Generator_UserColumnName="Motivo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConCelulares" msprop:Generator_TableClassName="ConCelularesDataTable" msprop:Generator_TableVarName="tableConCelulares" msprop:Generator_TablePropName="ConCelulares" msprop:Generator_RowDeletingName="ConCelularesRowDeleting" msprop:Generator_RowChangingName="ConCelularesRowChanging" msprop:Generator_RowEvHandlerName="ConCelularesRowChangeEventHandler" msprop:Generator_RowDeletedName="ConCelularesRowDeleted" msprop:Generator_UserTableName="ConCelulares" msprop:Generator_RowChangedName="ConCelularesRowChanged" msprop:Generator_RowEvArgName="ConCelularesRowChangeEvent" msprop:Generator_RowClassName="ConCelularesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha_Registro" msprop:Generator_ColumnVarNameInTable="columnFecha_Registro" msprop:Generator_ColumnPropNameInRow="Fecha_Registro" msprop:Generator_ColumnPropNameInTable="Fecha_RegistroColumn" msprop:Generator_UserColumnName="Fecha_Registro" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Minutos" msprop:Generator_ColumnVarNameInTable="columnMinutos" msprop:Generator_ColumnPropNameInRow="Minutos" msprop:Generator_ColumnPropNameInTable="MinutosColumn" msprop:Generator_UserColumnName="Minutos" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Reposiciones" msprop:Generator_ColumnVarNameInTable="columnNumero_Reposiciones" msprop:Generator_ColumnPropNameInRow="Numero_Reposiciones" msprop:Generator_ColumnPropNameInTable="Numero_ReposicionesColumn" msprop:Generator_UserColumnName="Numero_Reposiciones" type="xs:int" minOccurs="0" />
+              <xs:element name="Numero_Telefonico" msprop:Generator_ColumnVarNameInTable="columnNumero_Telefonico" msprop:Generator_ColumnPropNameInRow="Numero_Telefonico" msprop:Generator_ColumnPropNameInTable="Numero_TelefonicoColumn" msprop:Generator_UserColumnName="Numero_Telefonico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marca" msprop:Generator_ColumnVarNameInTable="columnMarca" msprop:Generator_ColumnPropNameInRow="Marca" msprop:Generator_ColumnPropNameInTable="MarcaColumn" msprop:Generator_UserColumnName="Marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Modelo" msprop:Generator_ColumnVarNameInTable="columnModelo" msprop:Generator_ColumnPropNameInRow="Modelo" msprop:Generator_ColumnPropNameInTable="ModeloColumn" msprop:Generator_UserColumnName="Modelo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConEmpleado" msprop:Generator_TableClassName="ConEmpleadoDataTable" msprop:Generator_TableVarName="tableConEmpleado" msprop:Generator_TablePropName="ConEmpleado" msprop:Generator_RowDeletingName="ConEmpleadoRowDeleting" msprop:Generator_RowChangingName="ConEmpleadoRowChanging" msprop:Generator_RowEvHandlerName="ConEmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="ConEmpleadoRowDeleted" msprop:Generator_UserTableName="ConEmpleado" msprop:Generator_RowChangedName="ConEmpleadoRowChanged" msprop:Generator_RowEvArgName="ConEmpleadoRowChangeEvent" msprop:Generator_RowClassName="ConEmpleadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Primer_Nombre" msprop:Generator_ColumnVarNameInTable="columnPrimer_Nombre" msprop:Generator_ColumnPropNameInRow="Primer_Nombre" msprop:Generator_ColumnPropNameInTable="Primer_NombreColumn" msprop:Generator_UserColumnName="Primer_Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Segundo_Nombre" msprop:Generator_ColumnVarNameInTable="columnSegundo_Nombre" msprop:Generator_ColumnPropNameInRow="Segundo_Nombre" msprop:Generator_ColumnPropNameInTable="Segundo_NombreColumn" msprop:Generator_UserColumnName="Segundo_Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Primer_Apellido" msprop:Generator_ColumnVarNameInTable="columnPrimer_Apellido" msprop:Generator_ColumnPropNameInRow="Primer_Apellido" msprop:Generator_ColumnPropNameInTable="Primer_ApellidoColumn" msprop:Generator_UserColumnName="Primer_Apellido" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Segundo_Apellido" msprop:Generator_ColumnVarNameInTable="columnSegundo_Apellido" msprop:Generator_ColumnPropNameInRow="Segundo_Apellido" msprop:Generator_ColumnPropNameInTable="Segundo_ApellidoColumn" msprop:Generator_UserColumnName="Segundo_Apellido" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion_Afiliado" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Afiliado" msprop:Generator_ColumnPropNameInRow="Descripcion_Afiliado" msprop:Generator_ColumnPropNameInTable="Descripcion_AfiliadoColumn" msprop:Generator_UserColumnName="Descripcion_Afiliado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Puesto" msprop:Generator_ColumnVarNameInTable="columnPuesto" msprop:Generator_ColumnPropNameInRow="Puesto" msprop:Generator_ColumnPropNameInTable="PuestoColumn" msprop:Generator_UserColumnName="Puesto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
